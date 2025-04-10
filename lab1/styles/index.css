@@ -1,0 +1,253 @@
+/* Reset & Root Settings */
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+html {
+    font-size: 62.5%; /* 1rem = 10px */
+    scroll-behavior: smooth;
+}
+
+body {
+    font-family: 'Playfair Display', serif;
+    background-color: #ffedfa;
+    color: #be5985;
+    line-height: 1.6;
+    padding: 0 2rem;
+    transition: background-color 0.5s ease, color 0.5s ease;
+}
+
+main {
+    max-width: 100rem;
+    margin: auto;
+    padding: 2rem 0;
+}
+
+/* Navbar */
+.navbar {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    background-color: #ffb8e0;
+    padding: 1rem 2rem;
+    border-radius: 0 0 1rem 1rem;
+    box-shadow: 0 0.4rem 0.6rem rgba(0, 0, 0, 0.1);
+}
+
+.navbar img {
+    height: 5rem;
+}
+
+.navbar nav a {
+    margin: 0 1rem;
+    text-decoration: none;
+    font-size: 1.6rem;
+    color: #be5985;
+    font-weight: bold;
+    transition: color 0.3s ease;
+}
+
+.navbar nav a:hover {
+    color: #ec7fa9;
+}
+
+/* Intro Section */
+#intro {
+    text-align: center;
+    padding: 4rem 1rem;
+    animation: fadeIn 1s ease-in;
+}
+
+#intro img {
+    width: 10rem;
+    margin-bottom: 1rem;
+}
+
+#intro h1 {
+    font-size: 3rem;
+    color: #be5985;
+}
+
+#intro h2 {
+    font-size: 2rem;
+    color: #ec7fa9;
+    margin-top: 0.5rem;
+}
+
+.intro-welcome {
+    margin-top: 2rem;
+    font-size: 1.6rem;
+    max-width: 70rem;
+    margin-left: auto;
+    margin-right: auto;
+}
+
+/* Menu Section */
+#menu {
+    padding: 3rem 1rem;
+}
+
+#menu h1 {
+    font-size: 2.4rem;
+    margin-bottom: 2rem;
+    text-align: center;
+    color: #ec7fa9;
+}
+
+table {
+    width: 100%;
+    border-spacing: 2rem 1rem;
+}
+
+tr {
+    transition: background-color 0.3s ease, transform 0.3s ease;
+}
+
+tr:hover {
+    background-color: #ffb8e06e;
+    transform: scale(1.01);
+    border-radius: 1rem;
+}
+
+.menu-dish-img img {
+    width: 10rem;
+    height: auto;
+    border-radius: 0.5rem;
+}
+
+.menu-dish-name,
+.menu-dish-price {
+    font-size: 1.6rem;
+    padding-left: 1rem;
+}
+
+/* Chefs Section */
+#chefs {
+    padding: 3rem 1rem;
+    text-align: center;
+}
+
+#chefs h1 {
+    font-size: 2.4rem;
+    margin-bottom: 2rem;
+    color: #ec7fa9;
+}
+
+.chefs-list {
+    display: flex;
+    justify-content: center;
+    gap: 2rem;
+    flex-wrap: wrap;
+}
+
+.chef-card {
+    background-color: #ffb8e0;
+    padding: 2rem 1rem;
+    border-radius: 2rem;
+    width: 20rem;
+    box-shadow: 0 0.4rem 0.8rem rgba(190, 89, 133, 0.2);
+    transition: transform 0.3s ease, box-shadow 0.3s ease;
+}
+
+.chef-card:hover {
+    transform: scale(1.05);
+    box-shadow: 0 0.6rem 1.2rem rgba(190, 89, 133, 0.3);
+}
+
+.chef-photo {
+    width: 100%;
+    border-radius: 1rem;
+    margin-bottom: 1rem;
+}
+
+.chef-name {
+    color: #be5985;
+    font-size: 1.6rem;
+}
+
+/* About Section Placeholder */
+#about {
+    padding: 3rem 1rem;
+    text-align: center;
+    color: #be5985;
+    font-style: italic;
+    font-size: 1.4rem;
+}
+
+/* Fade-in animation */
+@keyframes fadeIn {
+    from {
+        opacity: 0;
+        transform: translateY(2rem);
+    }
+    to {
+        opacity: 1;
+        transform: translateY(0);
+    }
+}
+
+/* Responsive Layout Enhancements */
+@media (max-width: 768px) {
+    .navbar {
+        flex-direction: column;
+        align-items: flex-start;
+    }
+
+    .navbar nav a {
+        margin: 0.5rem 0;
+        font-size: 1.4rem;
+    }
+
+    table, tr, td {
+        display: block;
+        width: 100%;
+    }
+
+    tr {
+        margin-bottom: 2rem;
+    }
+
+    .menu-dish-img img {
+        width: 100%;
+        height: auto;
+        margin-bottom: 1rem;
+    }
+
+    .menu-dish-name,
+    .menu-dish-price {
+        padding-left: 0;
+        font-size: 1.6rem;
+    }
+
+    .chefs-list {
+        flex-direction: column;
+        align-items: center;
+    }
+
+    .chef-card {
+        width: 90%;
+    }
+
+    iframe {
+        height: 200px;
+    }
+}
+
+/* Language Switcher */
+.lang-switch {
+    font-size: 1.4rem;
+    color: #7e3759;
+    margin-left: 2rem;
+    text-decoration: none;
+    border: 1px solid #ec7fa9;
+    padding: 0.3rem 0.8rem;
+    border-radius: 1rem;
+    background-color: #fff0f6;
+    transition: background-color 0.3s ease;
+}
+
+.lang-switch:hover {
+    background-color: #ffd5e8;
+}
