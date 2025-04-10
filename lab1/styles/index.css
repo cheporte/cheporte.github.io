@@ -192,7 +192,15 @@ tr:hover {
 @media (max-width: 768px) {
     .navbar {
         flex-direction: column;
-        align-items: flex-start;
+        align-items: center;
+    }
+
+    .navbar nav {
+        display: flex;
+        flex-direction: column;
+        align-items: center;
+        justify-content: space-around;
+        margin-top: 1rem;
     }
 
     .navbar nav a {
