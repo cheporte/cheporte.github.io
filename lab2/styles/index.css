@@ -138,7 +138,7 @@ tr:hover {
     padding: 12px;
     vertical-align: top;
     border-bottom: 1px solid #ddd;
-    font-size: 20px;
+    font-size: 2rem;
 }
   
 /* Dish image */
@@ -153,21 +153,23 @@ tr:hover {
 .menu-table ul {
     margin: 0;
     padding-left: 20px;
-    font-size: 1rem;
+    font-size: 1.5rem;
     list-style-type: disc;
-    color: #444;
+    color: #ec7fa9;
 }
   
 /* Ingredients toggle button */
 .ingredients-btn {
+    font-family: 'Playfair Display', serif;
     padding: 6px 12px;
-    font-size: 0.95rem;
+    font-size: 1.5rem;
     background-color: #ec7fa9;
-    color: #be5985; 
+    color: white; 
     border: 1px solid #ccc;
     border-radius: 4px;
     cursor: pointer;
     transition: background-color 0.3s;
+    text-align: center;
 }
   
 .ingredients-btn:hover {
@@ -231,7 +233,7 @@ tr:hover {
 
 /* Styling the Comment Form */
 #comment-form {
-    margin-bottom: 2rem;
+    margin: 2rem 0;
 }
   
 #comment-form textarea {
@@ -251,6 +253,9 @@ tr:hover {
     border: none;
     border-radius: 4px;
     cursor: pointer;
+    margin-top: 1rem;
+    font-family: 'Playfair Display', serif;
+    font-size: 1.5rem;
 }
   
 #comment-form button:hover {
