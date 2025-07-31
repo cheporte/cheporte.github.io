@@ -1,0 +1,30 @@
+:root {
+  --color-bg:         #faf7ff;   /* dreamy fog */
+  --color-bg-alt:     #f2ecff;   /* lavender haze */
+  --color-text:       #2a1a3b;   /* inked plum */
+  --color-text-muted: #6d4d91;   /* faded violet */
+
+  --color-primary:    #8a4fff;   /* pastel purple bloom */
+  --color-secondary:  #dcbfff;   /* soft orchid */
+  --color-accent:     #ffb3e9;   /* blush pink pop */
+
+  --color-border:     #d9c8f5;
+  --color-shadow:     rgba(138, 79, 255, 0.15);
+}
+
+@media (prefers-color-scheme: dark) {
+  :root {
+    --color-bg:         #140d1c;   /* midnight violet */
+    --color-bg-alt:     #1e152a;   /* ink-black indigo */
+    --color-text:       #e7dfff;   /* moonlit ink */
+    --color-text-muted: #a793c4;   /* soft stardust */
+
+    --color-primary:    #b788ff;   /* glowing lilac */
+    --color-secondary:  #6d3e9c;   /* deep mystic purple */
+    --color-accent:     #f798c9;   /* misty rose */
+
+    --color-border:     #332346;
+    --color-shadow:     rgba(183, 136, 255, 0.2);
+  }
+}
+  
